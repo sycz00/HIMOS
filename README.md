@@ -20,6 +20,7 @@ This means that the training environment relies on running using the iGibson sce
 ```sh
 python requirements_installations.py
 ````
+To train the Fetch robot, you must copy the inflated maps from the requirements folder into the respective iGibson data folders such that the robot computes feasable paths for navigation.
 
 The iGibson dataset requires a valid license, which needs to be added manually. The corresponding link can be found here https://docs.google.com/forms/d/e/1FAIpQLScPwhlUcHu_mwBqq5kQzT2VRIRwg_rJvF0IWYBk_LxEZiJIFg/viewform.
 For more information please have a look on the official website: https://stanfordvl.github.io/iGibson/dataset.html
