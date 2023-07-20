@@ -13,13 +13,8 @@ Please cite the paper as follows:
 
 
 #### Simulation Setup
-The repository uses the iGibson Simulator as well as Stable-baseline3 as external libaries. 
+The repository uses the iGibson Simulator as well as Stable-baseline3 as external libaries. Please install iGibson==2.0.3 and Stable-baseline3==1.4.0
 
-This means that the training environment relies on running using the iGibson scenes. For that it is necessary to download the iGibson scenes. A script is provided in [multi_object_search](/src/opendr/control/multi_object_search/requirements_installations.py) 
-
-```sh
-python requirements_installations.py
-````
 To train the Fetch robot, you must copy the inflated maps from the requirements folder into the respective iGibson data folders such that the robot computes feasable paths for navigation.
 
 The iGibson dataset requires a valid license, which needs to be added manually. The corresponding link can be found here https://docs.google.com/forms/d/e/1FAIpQLScPwhlUcHu_mwBqq5kQzT2VRIRwg_rJvF0IWYBk_LxEZiJIFg/viewform.
