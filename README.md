@@ -1,8 +1,11 @@
 # HIMOS: Learning Hierarchical Interactive Multi-Object Search for Mobile Manipulation
 
 Repository providing the source code for the paper "Learning Hierarchical Interactive Multi-Object Search for Mobile Manipulation", see the [project website]([http://mobile-rl.cs.uni-freiburg.de/](http://himos.cs.uni-freiburg.de)).  
+
 <p align="center">
-  <img src="img/teaser.png" height="250" title="Decision-making illustation">
+<img src="img/teaser.png" height="280" title="Decision-making illustation">
+  <img src="img/sim.png" height="280" title="Simulation Training">
+    <img src="img/real_2.png"  height="280" title="Real-world deployment">
 </p>
 Please cite the paper as follows:
 
@@ -13,24 +16,19 @@ Please cite the paper as follows:
         year={2023}
     }
 
-## Architecture
-<p align="center">
-  <img src="img/architecture.png" title="Approach Architecture">
-</p>
-
-## Simulation and Real-world
-<p align="center">
-  <img src="img/sim.png" height="280" title="Simulation Training">
-    <img src="img/real_2.png"  height="280" title="Real-world deployment">
-</p>
-
-## Simulation Video
+## Simulation video
 <p align="center">
 <img src="img/sim.GIF" height="400" />
 </p>
-## Real-world Video
+
+## Real-world video
 <p align="center">
 <img src="img/real.GIF" height="400" />
+</p>
+
+## Architecture
+<p align="center">
+  <img src="img/architecture.png" title="Approach Architecture">
 </p>
 
 #### Simulation Setup
