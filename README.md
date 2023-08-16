@@ -2,7 +2,7 @@
 
 Repository providing the source code for the paper "Learning Hierarchical Interactive Multi-Object Search for Mobile Manipulation", see the [project website]([http://mobile-rl.cs.uni-freiburg.de/](http://himos.cs.uni-freiburg.de)).  
 <p align="center">
-  <img src="img/teaser.png" width="350" title="Approach Architecture">
+  <img src="img/teaser.png" height="250" title="Decision-making illustation">
 </p>
 Please cite the paper as follows:
 
@@ -15,15 +15,23 @@ Please cite the paper as follows:
 
 ## Architecture
 <p align="center">
-  <img src="img/architecture.png" width="350" title="Approach Architecture">
+  <img src="img/architecture.png" title="Approach Architecture">
 </p>
 
 ## Simulation and Real-world
 <p align="center">
-  <img src="img/sim.png" width="350" title="Approach Architecture">
-  <img src="img/real.png" width="350" title="Approach Architecture">
+  <img src="img/sim.png" height="280" title="Simulation Training">
+    <img src="img/real_2.png"  height="280" title="Real-world deployment">
 </p>
 
+## Simulation Video
+<p align="center">
+<img src="img/sim.GIF" height="400" />
+</p>
+## Real-world Video
+<p align="center">
+<img src="img/real.GIF" height="400" />
+</p>
 
 #### Simulation Setup
 The repository uses the iGibson Simulator as well as Stable-baseline3 as external libaries. Please install iGibson==2.0.3 and Stable-baseline3==1.4.0
