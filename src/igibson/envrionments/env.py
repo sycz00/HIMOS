@@ -109,7 +109,8 @@ class Env(gym.Env):
         self.resample_task = self.config.get('resample_task', False)
         self.increment_steps = self.config.get("increment_env_steps", False)
 
-        self.interaction_failure_prob = 0.15
+        self.interaction_failure_prob_cabinets = 0.35
+        self.interaction_failure_prob_doors = 0.3
         self.drawer_pos_threshold = 0.13
         self.min_pixel_for_instances = 16
         self.min_episode_number = 25
@@ -516,7 +517,7 @@ class Env(gym.Env):
         else:
 
             # reject only the opening iteself.
-            if np.random.uniform() < self.interaction_failure_prob or not_at_goal_pos:
+            if np.random.uniform() < self.interaction_failure_prob_cabinets or not_at_goal_pos:
                 return collision, 2
 
             else:
@@ -817,7 +818,7 @@ class Env(gym.Env):
                 
 
             # reject only the door opening iteself
-            if np.random.uniform() < self.interaction_failure_prob or not_at_goal_pos:
+            if np.random.uniform() < self.interaction_failure_prob_doors or not_at_goal_pos:
                 reject_door_opening = True
                 
                 return collision, 2

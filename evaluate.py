@@ -89,30 +89,31 @@ def set_determinism_eval(seed=0):
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
 
-
+def create_lists():
+    return [[],[],[],[],[],[]]
 def main():
     
     
     scenes_counter = 8
-    scenes_succ = {'Merom_0_int': [[]]*6,'Benevolence_0_int': [[]]*6,  'Pomaria_0_int': [[]]*6, 'Wainscott_1_int': [[]]*6,'Rs_int': [[]]*6,'Ihlen_0_int': [[]]*6, 'Beechwood_1_int': [[]]*6, 'Ihlen_1_int': [[]]*6}
-    scenes_spl = {'Merom_0_int': [[]]*6,'Benevolence_0_int': [[]]*6,  'Pomaria_0_int': [[]]*6, 'Wainscott_1_int': [[]]*6,'Rs_int': [[]]*6,'Ihlen_0_int': [[]]*6, 'Beechwood_1_int': [[]]*6, 'Ihlen_1_int': [[]]*6}
-    scenes_steps_taken_succ = {'Merom_0_int': [[]]*6,'Benevolence_0_int': [[]]*6,  'Pomaria_0_int': [[]]*6, 'Wainscott_1_int': [[]]*6,'Rs_int': [[]]*6,'Ihlen_0_int': [[]]*6, 'Beechwood_1_int': [[]]*6, 'Ihlen_1_int': [[]]*6}
-    scenes_steps_taken_no_succ = {'Merom_0_int': [[]]*6,'Benevolence_0_int': [[]]*6,  'Pomaria_0_int': [[]]*6, 'Wainscott_1_int': [[]]*6,'Rs_int': [[]]*6,'Ihlen_0_int': [[]]*6, 'Beechwood_1_int': [[]]*6, 'Ihlen_1_int': [[]]*6}
-    scenes_steps_general = {'Merom_0_int': [[]]*6,'Benevolence_0_int': [[]]*6,  'Pomaria_0_int': [[]]*6, 'Wainscott_1_int': [[]]*6,'Rs_int': [[]]*6,'Ihlen_0_int': [[]]*6, 'Beechwood_1_int': [[]]*6, 'Ihlen_1_int': [[]]*6}
+    scenes_succ = {'Merom_0_int': create_lists(),'Benevolence_0_int': create_lists(),  'Pomaria_0_int': create_lists(), 'Wainscott_1_int': create_lists(),'Rs_int': create_lists(),'Ihlen_0_int': create_lists(), 'Beechwood_1_int': create_lists(), 'Ihlen_1_int': create_lists()}
+    scenes_spl = {'Merom_0_int': create_lists(),'Benevolence_0_int': create_lists(),  'Pomaria_0_int': create_lists(), 'Wainscott_1_int': create_lists(),'Rs_int': create_lists(),'Ihlen_0_int': create_lists(), 'Beechwood_1_int': create_lists(), 'Ihlen_1_int': create_lists()}
+    scenes_steps_taken_succ = {'Merom_0_int': create_lists(),'Benevolence_0_int': create_lists(),  'Pomaria_0_int': create_lists(), 'Wainscott_1_int': create_lists(),'Rs_int': create_lists(),'Ihlen_0_int': create_lists(), 'Beechwood_1_int': create_lists(), 'Ihlen_1_int': create_lists()}
+    scenes_steps_taken_no_succ = {'Merom_0_int': create_lists(),'Benevolence_0_int': create_lists(),  'Pomaria_0_int': create_lists(), 'Wainscott_1_int': create_lists(),'Rs_int': create_lists(),'Ihlen_0_int': create_lists(), 'Beechwood_1_int': create_lists(), 'Ihlen_1_int': create_lists()}
+    scenes_steps_general = {'Merom_0_int': create_lists(),'Benevolence_0_int': create_lists(),  'Pomaria_0_int': create_lists(), 'Wainscott_1_int': create_lists(),'Rs_int': create_lists(),'Ihlen_0_int': create_lists(), 'Beechwood_1_int': create_lists(), 'Ihlen_1_int': create_lists()}
     test_scenes = ['Merom_0_int', 'Benevolence_0_int', 'Pomaria_0_int', 'Wainscott_1_int', 'Rs_int', 'Ihlen_0_int','Beechwood_1_int', 'Ihlen_1_int']
     """
 
     scenes_counter = 7
-    scenes_succ = {'Pomaria_2_int': [[]]*6, 'Benevolence_2_int': [[]]*6,  'Benevolence_1_int': [[]]*6,  # noqa: E501
-                   'Wainscott_0_int': [[]]*6, 'Beechwood_0_int': [[]]*6, 'Merom_1_int': [[]]*6, 'Pomaria_1_int': [[]]*6}
-    scenes_spl = {'Benevolence_1_int': [[]]*6, 'Pomaria_2_int': [[]]*6, 'Benevolence_2_int': [[]]*6,
-                  'Wainscott_0_int': [[]]*6, 'Beechwood_0_int': [[]]*6, 'Pomaria_1_int': [[]]*6, 'Merom_1_int': [[]]*6}
-    scenes_steps_taken_succ = {'Benevolence_1_int': [[]]*6, 'Pomaria_2_int': [[]]*6, 'Benevolence_2_int': [
-        []]*6, 'Wainscott_0_int': [[]]*6, 'Beechwood_0_int': [[]]*6, 'Pomaria_1_int': [[]]*6, 'Merom_1_int': [[]]*6}
-    scenes_steps_taken_no_succ = {'Benevolence_1_int': [[]]*6, 'Pomaria_2_int': [[]]*6, 'Benevolence_2_int': [
-        []]*6, 'Wainscott_0_int': [[]]*6, 'Beechwood_0_int': [[]]*6, 'Pomaria_1_int': [[]]*6, 'Merom_1_int': [[]]*6}
-    scenes_steps_general = {'Benevolence_1_int': [[]]*6, 'Pomaria_2_int': [[]]*6, 'Benevolence_2_int': [
-        []]*6, 'Wainscott_0_int': [[]]*6, 'Beechwood_0_int': [[]]*6, 'Pomaria_1_int': [[]]*6, 'Merom_1_int': [[]]*6}
+    scenes_succ = {'Pomaria_2_int': create_lists(), 'Benevolence_2_int': create_lists(),  'Benevolence_1_int': create_lists(),  # noqa: E501
+                   'Wainscott_0_int': create_lists(), 'Beechwood_0_int': create_lists(), 'Merom_1_int': create_lists(), 'Pomaria_1_int': create_lists()}
+    scenes_spl = {'Benevolence_1_int': create_lists(), 'Pomaria_2_int': create_lists(), 'Benevolence_2_int': create_lists(),
+                  'Wainscott_0_int': create_lists(), 'Beechwood_0_int': create_lists(), 'Pomaria_1_int': create_lists(), 'Merom_1_int': create_lists()}
+    scenes_steps_taken_succ = {'Benevolence_1_int': create_lists(), 'Pomaria_2_int': create_lists(), 'Benevolence_2_int': [
+        []]*6, 'Wainscott_0_int': create_lists(), 'Beechwood_0_int': create_lists(), 'Pomaria_1_int': create_lists(), 'Merom_1_int': create_lists()}
+    scenes_steps_taken_no_succ = {'Benevolence_1_int': create_lists(), 'Pomaria_2_int': create_lists(), 'Benevolence_2_int': [
+        []]*6, 'Wainscott_0_int': create_lists(), 'Beechwood_0_int': create_lists(), 'Pomaria_1_int': create_lists(), 'Merom_1_int': create_lists()}
+    scenes_steps_general = {'Benevolence_1_int': create_lists(), 'Pomaria_2_int': create_lists(), 'Benevolence_2_int': [
+        []]*6, 'Wainscott_0_int': create_lists(), 'Beechwood_0_int': create_lists(), 'Pomaria_1_int': create_lists(), 'Merom_1_int': create_lists()}
     test_scenes = ['Pomaria_2_int', 'Benevolence_2_int', 'Benevolence_1_int',
                    'Wainscott_0_int', 'Beechwood_0_int', 'Merom_1_int', 'Pomaria_1_int']
     """

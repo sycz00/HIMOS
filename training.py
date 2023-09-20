@@ -71,7 +71,7 @@ def main():
     os.makedirs(model_log_dir, exist_ok=True)
 
     
-    num_cpu = 4
+    num_cpu = 32
     train_set = ['Merom_0_int', 'Benevolence_0_int', 'Pomaria_0_int', 'Wainscott_1_int', 'Rs_int', 'Ihlen_0_int',
                  'Beechwood_1_int', 'Ihlen_1_int',\
                   'Merom_0_int', 'Benevolence_0_int', 'Pomaria_0_int', 'Wainscott_1_int', 'Rs_int', 'Ihlen_0_int',
